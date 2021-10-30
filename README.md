@@ -86,14 +86,7 @@ docker run -it --rm --gpus all \
 ```
 
 ### Colab Demo 
-We have prepared a gui-demo for the google-colab see: ```demo.ipynb```. To run press ```Open In Colab``` button.
-
-For old demo, see ```old-demo.ipynb```.
-
-### Face-swap
-It is possible to modify the method to perform face-swap using supervised segmentation masks.
-![Screenshot](sup-mat/face-swap.gif)
-For both unsupervised and supervised video editing, such as face-swap, please refer to [Motion Co-Segmentation](https://github.com/AliaksandrSiarohin/motion-cosegmentation).
+We have prepared a gui-demo for the google-colab see: ```demo.ipynb```[https://colab.research.google.com/drive/1kAVrc9OxTW-IKQZFlRoT1cO690L7JUD8?usp=sharing]
 
 
 ### Training
