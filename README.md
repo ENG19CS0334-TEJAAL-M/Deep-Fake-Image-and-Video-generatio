@@ -142,11 +142,6 @@ that the object in the first frame of the video and in the source image have the
 
 
 ### Datasets
-
-**Taichi**. Follow the instructions in [data/taichi-loading](data/taichi-loading/README.md) or instructions from https://github.com/AliaksandrSiarohin/video-preprocessing. 
-
-
-
 ### Training on your own dataset
 1) Resize all the videos to the same size e.g 256x256, the videos can be in '.gif', '.mp4' or folder with images.
 We recommend the later, for each video make a separate folder with all the frames in '.png' format. This format is loss-less, and it has better i/o performance.
