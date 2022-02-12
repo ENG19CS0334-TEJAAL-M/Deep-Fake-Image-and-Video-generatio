@@ -57,33 +57,6 @@ pip install -r requirements.txt
 python setup.py install
 ```
 
-### Animation demo with Docker
-
-If you are having trouble getting the demo to work because of library compatibility issues,
-and you're running Linux, you might try running it inside a Docker container, which would
-give you better control over the execution environment.
-
-Requirements: Docker 19.03+ and [nvidia-docker](https://github.com/NVIDIA/nvidia-docker)
-installed and able to successfully run the `nvidia-docker` usage tests.
-
-We'll first build the container.
-
-```
-docker build -t first-order-model .
-```
-
-And now that we have the container available locally, we can use it to run the demo.
-
-```
-docker run -it --rm --gpus all \
-       -v $HOME/first-order-model:/app first-order-model \
-       python3 demo.py --config config/vox-256.yaml \
-           --driving_video driving.mp4 \
-           --source_image source.png  \ 
-           --checkpoint vox-cpk.pth.tar \ 
-           --result_video result.mp4 \
-           --relative --adapt_scale
-```
 
 ### Colab Demo 
 We have prepared a gui-demo for the google-colab see: ```demo.ipynb```[https://colab.research.google.com/drive/1kAVrc9OxTW-IKQZFlRoT1cO690L7JUD8?usp=sharing]
@@ -100,17 +73,6 @@ Checkpoints will be saved to this folder.
 To check the loss values during training see ```log.txt```.
 You can also check training data reconstructions in the ```train-vis``` subfolder.
 By default the batch size is tunned to run on 2 or 4 Titan-X gpu (appart from speed it does not make much difference). You can change the batch size in the train_params in corresponding ```.yaml``` file.
-
-### Evaluation on video reconstruction
-
-To evaluate the reconstruction performance run:
-```
-CUDA_VISIBLE_DEVICES=0 python run.py --config config/dataset_name.yaml --mode reconstruction --checkpoint path/to/checkpoint
-```
-You will need to specify the path to the checkpoint,
-the ```reconstruction``` subfolder will be created in the checkpoint folder.
-The generated video will be stored to this folder, also generated videos will be stored in ```png``` subfolder in loss-less '.png' format for evaluation.
-Instructions for computing metrics from the paper can be found: https://github.com/AliaksandrSiarohin/pose-evaluation.
 
 ### Image animation
 
