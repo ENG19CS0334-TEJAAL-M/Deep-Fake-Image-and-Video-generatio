@@ -35,8 +35,7 @@ pip install -r requirements.txt
 ```
 The VoxCeleb datasetis a face dataset of 22496 videos, extracted from YouTube videos.
 For pre-processing, we extract an initial bounding box in the first video frame.  We filter out sequences that have resolution lower than 256 × 256 and the remaining videos are resized to 256 × 256 preserving the aspect ratio.
-we obtain 19522
-### training videos and 525 test videos, with lengths varying from 64 to 1024 frames.
+### we obtain 19522 training videos and 525 test videos, with lengths varying from 64 to 1024 frames.
 
 ### YAML configs
 
