@@ -1,24 +1,4 @@
 # MINOR PROJECT 
-# DSU
-
-   ###  DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING
-   ###  SCHOOL OF ENGINEERING
-###  DAYANANDA SAGAR UNIVERSITY
-                                                     
-  ###     MINOR PROJECT SYNOPSIS
- ### BACHELOR OF TECHNOLOGY
-### IN
-### COMPUTER SCIENCE & ENGINEERING
- 
-### Submitted by 
-  - TEJAAL M - ENG19CS0334
-  - SIDDIQ KHAN - ENG19CS0308
- - SNAVYA SAI M B-ENG19CS0312
- - SOUPTIK SINHA  - ENG19CS0318
- - VARSHA PREMANAND – ENG19CS0353
-  ### Under the supervision of
-    - Mrs Shweta S A
-
 # First Order Motion Model for Image Animation
 
 This repository contains the source code for the paper [First Order Motion Model for Image Animation](https://papers.nips.cc/paper/8935-first-order-motion-model-for-image-animation) by Aliaksandr Siarohin, [Stéphane Lathuilière](http://stelat.eu), [Sergey Tulyakov](http://stulyakov.com), [Elisa Ricci](http://elisaricci.eu/) and [Nicu Sebe](http://disi.unitn.it/~sebe/). 
