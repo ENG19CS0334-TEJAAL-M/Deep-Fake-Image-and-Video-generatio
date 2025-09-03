@@ -43,6 +43,9 @@ python setup.py install
 
 ### Colab Demo 
 We have prepared a gui-demo for the google-colab see: ```demo.ipynb```[https://colab.research.google.com/drive/1kAVrc9OxTW-IKQZFlRoT1cO690L7JUD8?usp=sharing]
+###Image
+<img width="1117" height="614" alt="image" src="https://github.com/user-attachments/assets/cdfc9778-500e-45e1-b990-0fc5bfeab9af" />
+
 
 
 ### Training
